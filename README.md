@@ -2,6 +2,10 @@
 
 > a GitHub App built with [probot](https://github.com/probot/probot) that autoassign PR to creator
 
+## Github App
+
+https://github.com/apps/autoassign-pr-to-creator
+
 ## Setup
 
 ```sh
