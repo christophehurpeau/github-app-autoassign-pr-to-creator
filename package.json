@@ -6,7 +6,8 @@
   "license": "ISC",
   "repository": "https://github.com/christophehurpeau/github-app-autoassign-pr-to-creator.git",
   "scripts": {
-    "dev": "nodemon --exec \"npm start\"",
+    "start:tunnel": "lt --subdomain github-app-autoassign-pr-to-creator --port 3010",
+    "dev": "PRIVATE_KEY=\"$(cat key.pem)\" nodemon --exec \"yarn start --port 3010\"",
     "start": "probot run ./index.js",
     "lint": "standard --fix",
     "test": "standard"
@@ -15,6 +16,7 @@
     "probot": "^6.0.0"
   },
   "devDependencies": {
+    "localtunnel": "^1.9.0",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
     "standard": "^10.0.3"

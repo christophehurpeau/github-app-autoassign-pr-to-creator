@@ -11,3 +11,13 @@ npm install
 # Run the bot
 npm start
 ```
+
+## Deploy
+
+```sh
+now -e APP_ID=aaa \
+     -e WEBHOOK_SECRET=bbb \
+     -e NODE_ENV=production \
+     -e PRIVATE_KEY="$(cat key.pem)" \
+     -e LOG_LEVEL=info
+```
