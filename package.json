@@ -1,0 +1,25 @@
+{
+  "name": "github-app-autoassign-pr-to-creator",
+  "version": "1.0.0",
+  "description": "Github app: autoassign PR to creator",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
+  "license": "ISC",
+  "repository": "https://github.com/christophehurpeau/github-app-autoassign-pr-to-creator.git",
+  "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "standard"
+  },
+  "dependencies": {
+    "probot": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  }
+}
